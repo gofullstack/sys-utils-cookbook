@@ -1,5 +1,5 @@
 {
-  "suggestions": {
+  "providing": {
   },
   "platforms": {
     "debian": [
@@ -18,28 +18,28 @@
 
     ]
   },
-  "long_description": "",
-  "conflicting": {
-  },
-  "description": "Base System Utilities",
-  "recipes": {
-    "sys-utils": "Installs base sytesm utilities"
-  },
-  "providing": {
-  },
-  "dependencies": {
-  },
   "maintainer": "Cramer Development, Inc.",
-  "version": "0.0.1",
-  "attributes": {
-  },
   "replacing": {
   },
   "maintainer_email": "sysadmin@cramerdev.com",
+  "description": "Base System Utilities",
   "groupings": {
   },
-  "name": "sys-utils",
   "recommendations": {
+  },
+  "dependencies": {
+  },
+  "version": "0.0.1",
+  "recipes": {
+    "sys-utils": "Installs base sytesm utilities"
+  },
+  "attributes": {
+  },
+  "suggestions": {
+  },
+  "long_description": "",
+  "name": "sys-utils",
+  "conflicting": {
   },
   "license": "Apache 2.0"
 }
