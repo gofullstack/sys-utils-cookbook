@@ -46,7 +46,12 @@ end
   end
 end
 
-# Chef gem
+# Ohai  & chef gemsgem
+
+gem_package "ohai" do
+  version node[:chef][:ohai_version]
+end
+
 gem_package "chef" do
   version node[:chef][:client_version]
 end
