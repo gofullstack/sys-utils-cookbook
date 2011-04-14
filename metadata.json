@@ -1,6 +1,4 @@
 {
-  "providing": {
-  },
   "platforms": {
     "debian": [
 
@@ -18,14 +16,13 @@
 
     ]
   },
-  "maintainer": "Cramer Development, Inc.",
-  "replacing": {
+  "suggestions": {
   },
-  "maintainer_email": "sysadmin@cramerdev.com",
+  "conflicting": {
+  },
   "description": "Base System Utilities",
-  "groupings": {
-  },
-  "recommendations": {
+  "long_description": "",
+  "providing": {
   },
   "dependencies": {
   },
@@ -35,11 +32,14 @@
   },
   "attributes": {
   },
-  "suggestions": {
+  "maintainer": "Cramer Development, Inc.",
+  "replacing": {
   },
-  "long_description": "",
+  "maintainer_email": "sysadmin@cramerdev.com",
   "name": "sys-utils",
-  "conflicting": {
+  "groupings": {
+  },
+  "recommendations": {
   },
   "license": "Apache 2.0"
 }
