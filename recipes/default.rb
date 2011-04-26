@@ -40,13 +40,14 @@ end
 end
 
 # Gems
-%w{ json rake rvm }.each do |pkg|
+%w{ json rake }.each do |pkg|
   gem_package pkg do
     action :install
   end
 end
 
-# Ohai  & chef gemsgem
+# Ohai  & chef gems
+# TODO: Replace this with chef-client cookbook
 
 gem_package "ohai" do
   version node[:chef][:ohai_version]
