@@ -1,45 +1,45 @@
 {
+  "name": "sys-utils",
+  "description": "Base System Utilities",
+  "long_description": "",
+  "maintainer": "Cramer Development, Inc.",
+  "maintainer_email": "sysadmin@cramerdev.com",
+  "license": "Apache 2.0",
   "platforms": {
-    "debian": [
-
-    ],
-    "fedora": [
+    "redhat": [
 
     ],
     "centos": [
 
     ],
+    "fedora": [
+
+    ],
     "ubuntu": [
 
     ],
-    "redhat": [
+    "debian": [
 
     ]
+  },
+  "dependencies": {
+  },
+  "recommendations": {
   },
   "suggestions": {
   },
   "conflicting": {
   },
-  "description": "Base System Utilities",
-  "long_description": "",
   "providing": {
   },
-  "dependencies": {
-  },
-  "version": "0.0.1",
-  "recipes": {
-    "sys-utils": "Installs base sytesm utilities"
+  "replacing": {
   },
   "attributes": {
   },
-  "maintainer": "Cramer Development, Inc.",
-  "replacing": {
-  },
-  "maintainer_email": "sysadmin@cramerdev.com",
-  "name": "sys-utils",
   "groupings": {
   },
-  "recommendations": {
+  "recipes": {
+    "sys-utils": "Installs base sytesm utilities"
   },
-  "license": "Apache 2.0"
+  "version": "0.0.1"
 }
