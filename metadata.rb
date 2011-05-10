@@ -4,7 +4,7 @@ license           "Apache 2.0"
 description       "Base System Utilities"
 version           "0.0.1"
 
-recipe "sys-utils", "Installs base sytesm utilities"
+recipe "sys-utils", "Installs base system utilities"
 
 %w{ redhat centos fedora ubuntu debian }.each do |os|
   supports os

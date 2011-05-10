@@ -20,35 +20,26 @@
 case node[:platform]
 when "ubuntu","debian"
   %w{ sysv-rc-conf }.each do |pkg|
-    package pkg do
-      action :install
-    end
+    package pkg
   end
-#when "centos","redhat"
-  #%w{  }.each do |pkg|
-    #package pkg do
-      #action :install
-    #end
-  #end
+when "centos","redhat"
+  %w{ }.each do |pkg|
+    package pkg
+  end
 end
 
 # Common packages
 %w{ pwgen rlwrap unzip zip }.each do |pkg|
-  package pkg do
-    action :install
-  end
+  package pkg
 end
 
 # Gems
-%w{ json rake }.each do |pkg|
-  gem_package pkg do
-    action :install
-  end
+%w{ json repl rake }.each do |pkg|
+  gem_package pkg
 end
 
 # Ohai  & chef gems
 # TODO: Replace this with chef-client cookbook
-
 gem_package "ohai" do
   version node[:chef][:ohai_version]
 end
