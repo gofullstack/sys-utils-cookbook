@@ -34,7 +34,7 @@ end
 end
 
 # Gems
-%w{ json repl rake }.each do |pkg|
+%w{ json rake rb-readline repl }.each do |pkg|
   gem_package pkg
 end
 
