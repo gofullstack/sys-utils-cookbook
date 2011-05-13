@@ -19,11 +19,11 @@
 
 case node[:platform]
 when "ubuntu","debian"
-  %w{ sysv-rc-conf }.each do |pkg|
+  %w{ sysv-rc-conf ack-grep }.each do |pkg|
     package pkg
   end
 when "centos","redhat"
-  %w{ }.each do |pkg|
+  %w{ ack }.each do |pkg|
     package pkg
   end
 end
