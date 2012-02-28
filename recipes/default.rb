@@ -29,7 +29,7 @@ when "centos","redhat"
 end
 
 # Common packages
-%w{ lsof pwgen rlwrap unzip zip }.each do |pkg|
+%w{ lsof pwgen rlwrap unzip zip zsh }.each do |pkg|
   package pkg
 end
 
