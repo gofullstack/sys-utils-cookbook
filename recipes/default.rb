@@ -26,6 +26,7 @@ when "centos","redhat"
   %w{ ack }.each do |pkg|
     package pkg
   end
+  include_recipe 'yum::epel'
 end
 
 # Common packages

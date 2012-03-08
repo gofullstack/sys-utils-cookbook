@@ -9,3 +9,5 @@ recipe "sys-utils", "Installs base system utilities"
 %w{ redhat centos fedora ubuntu debian }.each do |os|
   supports os
 end
+
+depends 'yum'
