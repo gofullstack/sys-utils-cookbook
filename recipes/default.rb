@@ -23,10 +23,10 @@ when "ubuntu","debian"
     package pkg
   end
 when "centos","redhat"
+  include_recipe 'yum::epel'
   %w{ ack }.each do |pkg|
     package pkg
   end
-  include_recipe 'yum::epel'
 end
 
 # Common packages
