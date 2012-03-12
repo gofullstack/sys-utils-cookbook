@@ -24,7 +24,7 @@ when "ubuntu","debian"
   end
 when "centos","redhat"
   include_recipe 'yum::epel'
-  %w{ ack }.each do |pkg|
+  %w{ ack yum-utils }.each do |pkg|
     package pkg
   end
 end
