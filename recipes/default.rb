@@ -38,13 +38,3 @@ end
 %w{ json rake rb-readline repl }.each do |pkg|
   gem_package pkg
 end
-
-# Ohai  & chef gems
-# TODO: Replace this with chef-client cookbook
-gem_package "ohai" do
-  version node[:chef][:ohai_version]
-end
-
-gem_package "chef" do
-  version node[:chef][:client_version]
-end
